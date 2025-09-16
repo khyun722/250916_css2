@@ -177,17 +177,18 @@
             }
 
             #tech-stack ul {
+                /* --- 레이아웃 설정 --- */
                 display: flex;
+                justify-content: center; /* 자식 요소들을 중앙 정렬 */
                 flex-wrap: wrap;
                 gap: 24px;
-                justify-content: center;
+                margin: 0;
+                padding: 0;
             }
 
             #tech-stack li {
-                /* 점 없앰 */
                 list-style: none;
                 width: 128px;
-                /* 가로/세로 */
                 aspect-ratio: 1;
                 background-color: #f5f5e9;
                 border-radius: 8px;
@@ -198,9 +199,12 @@
                 align-items: center;
             }
 
-            #tech-stack img {
-                width: 100%;
-            }
+        #tech-stack img {
+            max-width: 80%;   /* 박스 안에서 비율 유지 */
+            max-height: 80%;
+            object-fit: contain;
+            display: block;
+        }
 
             #portfolio {
                 font-family: JoseonGulim;
