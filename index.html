@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>안녕하세요 한경현입니다</title>
+        <link
+            rel="icon"
+            type="image/png"
+            href="./favicon/favicon-96x96.png"
+            sizes="96x96"
+        />
+
+        <meta property="og:title" content="안녕하세요 한경현입니다" />
+        <meta
+            property="og:description"
+            content="사용자의 성장에 따라 함께 확장하는 시스템을 만듭니다. 대규모 트래픽 환경에서도 안정적인 서비스를 제공하는 백엔드 개발자입니다."
+        />
+        <meta property="og:image" content="쿼카이미지.png">
+
+        <style>
+            /* web font */
+            /* https://noonnu.cc/ */
+            @font-face {
+                font-family: "Escoredream";
+                src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-1Thin.woff")
+                    format("woff");
+                font-weight: 100;
+                font-display: swap;
+            }
+
+            @font-face {
+                font-family: "Escoredream";
+                src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-2ExtraLight.woff")
+                    format("woff");
+                font-weight: 200;
+                font-display: swap;
+            }
+
+            @font-face {
+                font-family: "Escoredream";
+                src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff")
+                    format("woff");
+                font-weight: 300;
+                font-display: swap;
+            }
+
+            @font-face {
+                font-family: "Escoredream";
+                src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff")
+                    format("woff");
+                font-weight: normal;
+                font-display: swap;
+            }
+
+            @font-face {
+                font-family: "Escoredream";
+                src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-5Medium.woff")
+                    format("woff");
+                font-weight: 500;
+                font-display: swap;
+            }
+
+            @font-face {
+                font-family: "Escoredream";
+                src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-6Bold.woff")
+                    format("woff");
+                font-weight: 600;
+                font-display: swap;
+            }
+
+            @font-face {
+                font-family: "Escoredream";
+                src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-7ExtraBold.woff")
+                    format("woff");
+                font-weight: 700;
+                font-display: swap;
+            }
+
+            @font-face {
+                font-family: "Escoredream";
+                src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-8Heavy.woff")
+                    format("woff");
+                font-weight: 800;
+                font-display: swap;
+            }
+
+            @font-face {
+                font-family: "Escoredream";
+                src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-9Black.woff")
+                    format("woff");
+                font-weight: 900;
+                font-display: swap;
+            }
+
+            @font-face {
+                font-family: "JoseonGulim";
+                src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ChosunGu.woff")
+                    format("woff");
+                font-weight: normal;
+                font-display: swap;
+            }
+
+            * {
+                box-sizing: border-box;
+                /* 모든 box width, height를 우리 지정에 맞게 */
+            }
+
+            .title {
+                font-family: Escoredream;
+            }
+
+            .subtitle {
+                font-family: Escoredream;
+            }
+
+            body {
+                margin: 0px;
+                font-family: JoseonGulim;
+                background-color: #f5f5e9;
+                color: #5c5c5c;
+            }
+
+            /* 색상 설정 */
+            /* https://www.bairesdev.com/tools/ai-colors */
+            /* https://2colors.colorion.co/ */
+            /* https://colorhunt.co/ */
+            /* https://mobilepalette.colorion.co/ */
+
+            .box {
+                background-color: #face5e;
+                padding: 12px;
+                border-radius: 12px;
+            }
+            /* 전체 배경색 #f5f5e9
+                박스색 #face5e
+                컨텐츠(박스 내부)색 #5c5c5c
+                글자색 #5c5c5c
+            */
+
+            /* 레이아웃 : 박스모델, 플렉스 */
+            #intro {
+                padding: 24px;
+            }
+
+            #intro .title,
+            .box {
+                text-align: center;
+            }
+
+            h2 {
+                margin-top: 0;
+                font-family: Escoredream;
+                text-align: center;
+            }
+
+            #intro div {
+                line-height: 2;
+                /* 1=100% */
+            }
+
+            body {
+                display: flex;
+                gap: 16px;
+                flex-direction: column;
+                /* 위에서 아래 방향으로 쌓아서 처리 */
+            }
+            body > section {
+                /* body에 바로 속한 section */
+                /* 자식 선택 -> 바로 속한 경우 */
+                /* breakpoint */
+                padding: 0 24px;
+                max-width: 960px;
+                margin: auto;
+                width: 100%;
+            }
+
+            #tech-stack ul {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 24px;
+                justify-content: center;
+            }
+
+            #tech-stack li {
+                /* 점 없앰 */
+                list-style: none;
+                width: 128px;
+                /* 가로/세로 */
+                aspect-ratio: 1;
+                background-color: #f5f5e9;
+                border-radius: 8px;
+                border: 1px transparent solid;
+                padding: 8px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #tech-stack img {
+                width: 100%;
+            }
+
+            #portfolio {
+                margin: 0px;
+                font-family: JoseonGulim;
+                background-color: #f5f5e9;
+                color: #5c5c5c;
+            }
+
+            #portfolio .box > div {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+            }
+
+            #portfolio .item {
+                background-color: #f5f5e9;
+                width: 100%;
+                border-radius: 8px;
+            }
+
+            #portfolio h3{
+                font-family: Escoredream;
+                text-align: center;;
+                color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <section id="intro">
+            <h1 class="title">
+                반갑습니다, 성장하는 백엔드 개발자 <strong>한경현</strong>입니다
+            </h1>
+            <section class="box">
+                <div>
+                    반갑습니다, 성장하는 백엔드 개발자입니다. <br />
+                    <strong>안정적이고 확장 가능한 시스템을 구축하는 것</strong>에 큰
+                    흥미를 느끼며, <br />
+                    대규모 트래픽을 다루는 경험을 쌓고 싶습니다.
+                </div>
+            </section>
+        </section>
+
+        <section id="tech-stack">
+            <section class="box">
+                <h2 class="subtitle">🛠️ 기술 스택</h2>
+                <ul>
+                    <li>
+                        <img src="icons/icons8-java-250.png" alt="java" />
+                    </li>
+                    <li>
+                        <img src="icons/spring-icon-svgrepo-com.png" alt="spring" />
+                    </li>
+                    <li>
+                        <img src="icons/mysql-svgrepo-com.png" alt="MySQL" />
+                    </li>
+                    <li>
+                        <img src="icons/aws-svgrepo-com.png" alt="AWS" />
+                    </li>
+                    <li>
+                        <img src="icons/github-142-svgrepo-com.png" alt="GitHub" />
+                    </li>
+                </ul>
+            </section>
+        </section>
+
+        <section id="portfolio">
+            <section class="box">
+                <h2 class="subtitle">💻 포트폴리오</h2>
+                <div>
+                    <div class="item">
+                        <h3>여행 추천 프로젝트</h3>
+                        <p>
+                            Spring Boot 기반으로 사용자 맞춤형 여행지 추천 API를
+                            개발했습니다.<br />
+                            JPA를 활용해 데이터를 관리하고, 사용자 리뷰와 평점을
+                            분석하여 <br />추천 알고리즘의 정확도를 높이는 데
+                            기여했습니다.
+                        </p>
+                    </div>
+                    <div class="item">
+                        <h3>재능 매칭 프로젝트</h3>
+                        <p>
+                            실시간 재능 매칭 및 채팅 기능을 중심으로 한 플랫폼을
+                            구축했습니다.<br />
+                            WebSocket을 이용해 사용자 간의 즉각적인 소통을 구현하고,
+                            <br />안전한 서비스 이용을 위해 예약 및 결제 시스템을
+                            설계했습니다.
+                        </p>
+                    </div>
+                    <div class="item">
+                        <h3>AWS 인프라 프로젝트</h3>
+                        <p>
+                            대규모 트래픽에 대응 가능한 클라우드 인프라를 설계하고
+                            구축했습니다.<br />
+                            AWS EC2, S3, RDS를 기반으로 시스템을 구성하고, <br />Load
+                            Balancer와 Auto Scaling을 적용하여 서비스의 가용성과
+                            확장성을 확보했습니다.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </body>
+</html>
